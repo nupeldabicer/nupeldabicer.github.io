@@ -2,9 +2,9 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Hoş Geldiniz</title>
+  <title>WELCOME</title>
 </head>
 <body>
-  <h1>Merhaba, bu benim GitHub Pages sitem!</h1>
+ 
 </body>
 </html>

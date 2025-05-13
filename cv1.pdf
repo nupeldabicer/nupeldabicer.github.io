@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUPELDA BİÇER - Özgeçmiş</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #6d0a0a;
+            --secondary-color: #d4af37;
+            --text-color: #333;
+            --light-bg: #f9f9f9;
+            --white: #ffffff;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-bg);
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background: var(--white);
+            box-shadow: var(--shadow);
+            border-radius: 10px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 1px solid #eee;
+            margin-bottom: 20px;
+        }
+        
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid var(--primary-color);
+            margin-bottom: 15px;
+        }
+        
+        h1 {
+            color: var(--primary-color);
+            margin: 10px 0;
+        }
+        
+        .title {
+            color: var(--secondary-color);
+            font-weight: 300;
+        }
+        
+        h2 {
+            color: var(--primary-color);
+            border-left: 4px solid var(--secondary-color);
+            padding-left: 10px;
+            margin-top: 25px;
+        }
+        
+        section {
+            margin-bottom: 25px;
+        }
+        
+        .item {
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px dashed #eee;
+        }
+        
+        .item:last-child {
+            border-bottom: none;
+        }
+        
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 5px;
+        }
+        
+        .item-title {
+            font-weight: 600;
+            color: var(--primary-color);
+        }
+        
+        .date {
+            color: #666;
+            font-style: italic;
+        }
+        
+        ul {
+            padding-left: 20px;
+        }
+        
+        li {
+            margin-bottom: 8px;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        a:hover {
+            color: var(--secondary-color);
+            text-decoration: underline;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            color: #666;
+            font-size: 0.9em;
+        }
+        
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .skill {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+        
+        .toggle-btn {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .toggle-btn:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                margin: 10px;
+                padding: 15px;
+            }
+            
+            .item-header {
+                flex-direction: column;
+            }
+            
+            .date {
+                margin-top: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="profile.jpg" alt="Nupelda Biçer" class="profile-pic">
+            <h1>NUPELDA BİÇER</h1>
+            <p class="title">Computer Engineering Student</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <a href="mailto:bicernupelda8@gmail.com">bicernupelda8@gmail.com</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <a href="tel:+905445123919">544 512 3919</a>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>İstanbul/Sancaktepe</span>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <section id="about">
+                <h2>About Me</h2>
+                <p>I am a student at Karabük University Computer Engineering department. I am a person who is prone to teamwork and open to learning.</p>
+            </section>
+            
+            <section id="experience">
+                <h2>Experience</h2>
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Quality Officer- Atak Mood</span>
+                        <span class="date">2023 - 2024</span>
+                    </div>
+                    <p>I was responsible for quality control and improvement studies in production processes.</p>
+                </div>
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Working Student - Karabük University Quality Coordination Department</span>
+                        <span class="date">March 2025 - June 2025</span>
+                    </div>
+                    <p>I worked within the scope of İŞKUR Student Program</p>
+                </div>
+            </section>
+            
+            <section id="education">
+                <h2>education</h2>
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Istanbul Sultanbeyli Türk Telekom Anatolian High School</span>
+                        <span class="date">2017 - 2021</span>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Karabük University - Computer Engineering</span>
+                        <span class="date">2022 - 2026 (estimated date)</span>
+                    </div>
+                    <p>I am continuing my undergraduate education.</p>
+                </div>
+            </section>
+            
+            <section id="skills">
+                <h2>Skills</h2>
+                <button class="toggle-btn" onclick="toggleSkills()">
+                    <i class="fas fa-code"></i> Show/Hide Skills
+                </button>
+                <div id="skills-list">
+                    <div class="skills-container">
+                        <span class="skill">HTML5</span>
+                        <span class="skill">CSS3</span>
+                        <span class="skill">JavaScript</span>
+                        <span class="skill">Python</span>
+                        <span class="skill">C Programlama</span>
+                        <span class="skill">Java</span>
+                        <span class="skill">Algoritmalar</span>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="languages">
+                <h2>languages</h2>
+                <ul>
+                    <li><strong>English:</strong> Intermediate level (B1)</li>
+                    <li><strong>Kurdish:</strong> Good Level</li>
+                </ul>
+            </section>
+            
+            <section id="certificates">
+                <h2>Certificates</h2>
+                <ul>
+                    <li>Basic Enneagram Training (2023)</li>
+                    <li>Defense Industry Aviation Summit Participation Certificate (2024)</li>
+                </ul>
+            </section>
+            
+            <section id="references">
+                <h2>References</h2>
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Ahmet Gönülalçak</span>
+                    </div>
+                    <p>Atak Mood Manager</p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:atakmood@gmail.com">atakmood@gmail.com</a></p>
+                </div>
+                <div class="item">
+                    <div class="item-header">
+                        <span class="item-title">Karabük University Quality Coordination Department</span>
+                    </div>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:kalite@karabuk.edu.tr">kalite@karabuk.edu.tr</a></p>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <p>© 2025 Nupelda Biçer. Tüm hakları saklıdır.</p>
+            <p><small>This page was created using HTML5, CSS3 and JavaScript.</small></p>
+            <div style="margin-top: 10px;">
+                <a href="#" style="margin: 0 10px;"><i class="fas fa-file-pdf"></i> PDF Olarak İndir</a>
+                <a href="#" style="margin: 0 10px;"><i class="fas fa-print"></i> Yazdır</a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function toggleSkills() {
+            const skillsList = document.getElementById('skills-list');
+            const toggleBtn = document.querySelector('.toggle-btn');
+            
+            if (skillsList.style.display === 'none') {
+                skillsList.style.display = 'block';
+                toggleBtn.innerHTML = '<i class="fas fa-code"></i> Yetenekleri Gizle';
+            } else {
+                skillsList.style.display = 'none';
+                toggleBtn.innerHTML = '<i class="fas fa-code"></i> Yetenekleri Göster';
+            }
+        }
+        
+        // Sayfa yüklendiğinde yetenekleri gizle
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('skills-list').style.display = 'none';
+        });
+    </script>
+</body>
+</html>
